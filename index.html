@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="converter-card">
+
+            <div class="header">
+                <div class="icon">🌡️</div>
+                <h1>Temperature Converter</h1>
+                <p>Convert temperatures quickly and easily.</p>
+            </div>
+
+            <div class="form-group">
+
+                <label for="temperature">Enter Temperature</label>
+
+                <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Enter temperature value"
+                    step="any"
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="unit">Select Input Unit</label>
+
+                <select id="unit">
+
+                    <option value="celsius">Celsius (°C)</option>
+
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+
+                    <option value="kelvin">Kelvin (K)</option>
+
+                </select>
+
+            </div>
+
+            <button id="convertBtn">
+                Convert Temperature →
+            </button>
+
+            <p id="errorMessage" role="alert" aria-live="polite"></p>
+
+            <div class="result-section" id="resultSection" aria-live="polite">
+
+                <h2>Conversion Results</h2>
+
+                <div class="result-box">
+
+                    <p>Celsius</p>
+                    <h3 id="celsiusResult">-- °C</h3>
+
+                </div>
+
+                <div class="result-box">
+
+                    <p>Fahrenheit</p>
+                    <h3 id="fahrenheitResult">-- °F</h3>
+
+                </div>
+
+                <div class="result-box">
+
+                    <p>Kelvin</p>
+                    <h3 id="kelvinResult">-- K</h3>
+
+                </div>
+
+            </div>
+
+            <p class="footer-text">
+                Designed with ❤️ using HTML, CSS & JavaScript
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
